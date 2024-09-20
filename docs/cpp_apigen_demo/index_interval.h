@@ -5,6 +5,8 @@
 
 namespace cpp_apigen_demo {
 
+#define INLINE inline
+
 /// Demonstrates a non-template class.
 ///
 /// \ingroup indexing
@@ -31,7 +33,7 @@ class IndexInterval {
 /// Computes the union of two intervals.
 ///
 /// \relates IndexInterval
-IndexInterval Union(IndexInterval a, IndexInterval b);
+INLINE IndexInterval Union(IndexInterval a, IndexInterval b);
 
 }  // namespace cpp_apigen_demo
 
